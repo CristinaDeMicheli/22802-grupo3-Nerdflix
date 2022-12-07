@@ -4,7 +4,7 @@ import {collection, addDoc} from 'firebase/firestore';
 import { db } from '../firebase/firebase';
 //import {async} from '@firebase/util';
 import Swal from 'sweetalert2';
-import withReactContent from 'sweetalert2-react-content';
+//import withReactContent from 'sweetalert2-react-content';
 //const MySwal = withReactContent(Swal);
 
 

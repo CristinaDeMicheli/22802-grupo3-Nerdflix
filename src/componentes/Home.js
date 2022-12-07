@@ -9,7 +9,8 @@ export function Home() {
    //const {user}=useAuth();
    //console.log(user);
    return <div>
-   <h1>Bienvenido {user.email}</h1>   
-   <button onClick={handleLogout}>Cerrar sessión</button>   
+   <h1>Esta seguro que desea cerrar sesion  {user.email} ?</h1>
+   <button className='btn btn-outline-light btn-lg mt-3' onClick={handleLogout}>Cerrar sessión</button>
+      
    </div>
 }

@@ -1,10 +1,10 @@
 import React, {useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
-import {collection, getDocs, getDoc, deleteDoc, doc} from 'firebase/firestore';
+import {collection, getDocs, deleteDoc, doc} from 'firebase/firestore';
 import { db } from '../firebase/firebase';
 import Swal from 'sweetalert2';
 //import {async} from '@firebase/util';
-import withReactContent from 'sweetalert2-react-content';
+//import withReactContent from 'sweetalert2-react-content';
 //const MySwal = withReactContent(Swal);
 
 
@@ -71,11 +71,14 @@ const Mostrar = () => {
 
   return (
     <div className='container'>
+        <Link to="/cerrar_sesion" className='btn btn-outline-light btn-lg mt-3 mb-4 w-25' >Cerrar sesion</Link>
         <div className='row'>
             <div className='col'>
+                
                 <div className='d-grid gap-2'>
                     <Link to="/crearproducto" className='btn btn-outline-light btn-lg mt-3 mb-4 w-25' >Crear Nuevo Producto  <i className="fa-solid fa-plus"></i></Link>
                 </div>
+                
                 <table className='table table-dark table-hover'>
                     <thead>
                         <tr>
@@ -93,7 +96,7 @@ const Mostrar = () => {
                                 <td key={produc.Stock} className='text-light'>{produc.Stock} </td>
                                 <td>
                                     <Link to={`/editarproducto/${produc.id}`} className="btn btn-light"><i className="fa-solid fa-pen-to-square"></i></Link>
-                                    <button onClick={()=>{confirmDelete(produc.id)}} className="bg-danger"><i className="fa-solid fa-trash "></i></button>
+                                    <button onClick={()=>{confirmDelete(produc.id)}} className="btn bg-danger"><i className="fa-solid fa-trash "></i></button>
                                 </td>
                             </tr>
                         ))}

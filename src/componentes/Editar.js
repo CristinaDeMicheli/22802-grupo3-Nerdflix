@@ -4,7 +4,7 @@ import {getDoc, doc, updateDoc} from 'firebase/firestore';
 import { db } from '../firebase/firebase';
 import { dbCollections } from '../firebase/collections';
 import Swal from 'sweetalert2';
-import withReactContent from 'sweetalert2-react-content';
+//import withReactContent from 'sweetalert2-react-content';
 //const MySwal = withReactContent(Swal);
 
 const Editar = () => {

@@ -29,16 +29,37 @@ export function Registro() {
        }
     };
     return (
-       <div>
-        {error && <p>{error}</p>}
-         <form  onSubmit={handleSubmit}>
-        <label htmlFor="email">Email</label>
-        <input type="email" name="email" placeholder="example@gmail.com"  onChange={handleChange}/>
-        <label htmlFor="password">Password</label>
-        <input type="password" name="password" placeholder="********" id="password" onChange={handleChange}/>
-        <button>Registrarse</button>
+        <div className='container'>
+            <div className='row'>
+                 <div className='col'>
+                     <h1 className='mt-3 text-light'>REGISTRO</h1>
+                       {error && <p>{error}</p>}
+                     <form className='mt-5 ' onSubmit={handleSubmit}>
+                          <div className='mb-4'>
+                             <label className='form-label h3 text-light'>Email:</label>
+                                <input 
+                
+                                 type="email" name="email" placeholder="example@gmail.com"  onChange={handleChange}
+                                 className='form-control w-50 m-auto '
+                
+                                 />
+                        </div>
+                        <div className='mb-4'>
+                            <label className='form-label h3 text-light'>Password:</label>
+                            <input 
+                            type="password" name="password" placeholder="********" id="password" onChange={handleChange}
+                            className='form-control w-50 m-auto '
+                
+                           />
+                     </div>
 
-        </form>
-       </div>
+
+                    <button type="submit" className='btn btn-outline-light btn-lg mt-3'>Registrarse</button>
+     
+                </form>
+            </div>
+        </div>
+    </div>
+       
 )
 }
