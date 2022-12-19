@@ -1,4 +1,16 @@
+:root {
+  --white: #FFFFFF;
+  --red: #e50914;
+  --black: #000000;
+  --grey: #323133;
+  --grey-light: #828282;
+  --red-light: #fe4242;
+}
+
 body {
+  
+  background-color: var(--black)!important;
+
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -21,9 +33,38 @@ body {
 }
 
 
+/* css para comentarios de usuarios */
 
-#paginacion {
-  display: flex;
-  justify-content: center;
-  padding: 2rem;
+.bg-light {
+  color: var(--white);
+  padding: 50px;
+  background-color: var(--black)!important;
+  --bs-bg-opacity: 0!important;
+}
+
+.overlay {
+ background-color: var(--grey-light);
+ border-radius: 20px;
+}
+
+.userInfo .commentsTwo .fullName {
+  color: var(--red);
+}
+
+.comment-title {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--white)
+}
+
+
+.form .postBtn {
+  border: 2px solid var(--red);
+  background-color: var(--red);
+}
+
+
+.replyBtn {
+    background-color: var(--grey)!important;
 }
