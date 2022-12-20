@@ -37,13 +37,13 @@ body {
 
 .bg-light {
   color: var(--white);
-  padding: 50px;
+  padding: 120px!important;
   background-color: var(--black)!important;
   --bs-bg-opacity: 0!important;
 }
 
 .overlay {
- background-color: var(--grey-light);
+/*  background-color: var(--grey-light); */
  border-radius: 20px;
 }
 
@@ -55,7 +55,7 @@ body {
   font-family: 'Noto Sans', sans-serif;
   font-size: 30px;
   font-weight: 700;
-  color: var(--white)
+  color: var(--white)!important;
 }
 
 
@@ -65,6 +65,3 @@ body {
 }
 
 
-.replyBtn {
-    background-color: var(--grey)!important;
-}
