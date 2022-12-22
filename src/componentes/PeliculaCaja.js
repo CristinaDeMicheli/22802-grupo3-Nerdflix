@@ -2,20 +2,14 @@ import React, { useState } from "react";
 import Swal from "sweetalert2";
 import { FaHeart, FaRegHeart } from "react-icons/fa";
 
-
-
 const API_IMG = "https://image.tmdb.org/t/p/w500/";
 
-
-
 const PeliculaCaja = ({ item }) => {
-  
   //inicio hooks: mostrar modal,  like
 
   const [mostrar, setMostrar] = useState(false);
   const [like, setLike] = useState(false);
   const ocultarModal = () => setMostrar(false);
-  
 
   const mostrarModal = () => {
     setMostrar(true);
@@ -33,18 +27,17 @@ const PeliculaCaja = ({ item }) => {
       /* Read more about isConfirmed, isDenied below */
       if (result.isConfirmed) {
         setLike(true);
-   
+
         Swal.fire("Favorita!", "", "success");
       } else if (result.isDenied) {
         setLike(false);
-        Swal.fire("No es Favorita", "", "info");
+        Swal.fire("Cerrar", "", "info");
       }
     });
     ocultarModal();
   };
 
   return (
-    
     <div>
       <div className="card text-center mb-3">
         <div className="card-body">
@@ -68,7 +61,6 @@ const PeliculaCaja = ({ item }) => {
           </button>
         </div>
       </div>
-      
     </div>
   );
 };
