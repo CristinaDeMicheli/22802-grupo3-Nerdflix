@@ -8,9 +8,7 @@
 }
 
 body {
-  
   background-color: var(--black)!important;
-
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -21,14 +19,14 @@ body {
 
 .container {
   width: 100%;
-  margin: 1em auto;
+  margin: 1em auto!important;
 }
 
 .grid {
   display: grid;
   margin-left: .5px;
   grid-template-columns: repeat(4,1fr);
-  grid-gap: 0.2em;
+  grid-gap: 0.3em;
   justify-content: center;
 }
 
@@ -60,8 +58,9 @@ body {
 
 
 .form .postBtn {
-  border: 2px solid var(--red);
-  background-color: var(--red);
+  border: 2px solid var(--red)!important;
+  background-color: var(--red)!important;
 }
+
 
 

@@ -4,13 +4,13 @@ import "./estilos/estilos-Contacto.css"
 function Contacto() {
   return (
     <div>
-      <div class="contact_form">
-        <div class="formulario">
+      <div className="contact_form">
+        <div className="formulario">
           <h1>Formulario de contacto</h1>
           <h3>Escríbenos y en breve mos pondremos en contacto contigo</h3>
           <form action="" method="post">
             <p>
-              <label for="nombre" className="colocar_nombre">
+              <label htmlFor="nombre" className="colocar_nombre">
                 Nombre
                 <span className="obligatorio">*</span>
               </label>
@@ -24,7 +24,7 @@ function Contacto() {
             </p>
 
             <p>
-              <label for="email" className="colocar_email">
+              <label htmlFor="email" className="colocar_email">
                 Email
                 <span className="obligatorio">*</span>
               </label>
@@ -38,7 +38,7 @@ function Contacto() {
             </p>
 
             <p>
-              <label for="telefone" className="colocar_telefono">
+              <label htmlFor="telefono" className="colocar_telefono">
                 Teléfono
               </label>
               <input
@@ -50,23 +50,23 @@ function Contacto() {
             </p>
 
             <p>
-              <label for="asunto" className="colocar_asunto">
+              <label htmlFor="asunto" className="colocar_asunto">
                 Asunto
                 <span className="obligatorio">*</span>
               </label>
               <input
                 type="text"
                 name="introducir_asunto"
-                id="assunto"
+                id="asunto"
                 required="obligatorio"
                 placeholder="Escribe un asunto"
               />
             </p>
 
             <p>
-              <label for="mensaje" className="colocar_mensaje">
+              <label htmlFor="mensaje" className="colocar_mensaje">
                 Mensaje
-                <span class="obligatorio">*</span>
+                <span className="obligatorio">*</span>
               </label>
               <textarea
                 name="introducir_mensaje"

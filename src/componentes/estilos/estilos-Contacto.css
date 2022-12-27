@@ -95,8 +95,8 @@ body{
   
   
   h1{
-    font-size: 39px;  
-    text-align: letf; 
+    font-size: 37px;  
+    text-align: left; 
     padding-bottom: 20px; 
     color:  var(--red-light);
   }

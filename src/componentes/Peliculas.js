@@ -2,10 +2,10 @@ import { useState, useEffect } from "react";
 import PeliculaCaja from "./PeliculaCaja";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Spinner } from "./Spinner";
-
+/* 
 const API_URL =
   "https://api.themoviedb.org/3/movie/popular?api_key=b99d7773e83eff1759b62bfc0e8a373f&language=es-ES";
-
+ */
 const Peliculas = () => {
   // hooks listado de peliculas y paginas
   const [peliculas, setPeliculas] = useState([]);
