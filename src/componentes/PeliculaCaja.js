@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Swal from "sweetalert2";
 import { FaHeart, FaRegHeart } from "react-icons/fa";
-
+import "../App.css"
 const API_IMG = "https://image.tmdb.org/t/p/w500/";
 
 const PeliculaCaja = ({ item }) => {
@@ -38,7 +38,7 @@ const PeliculaCaja = ({ item }) => {
   };
 
   return (
-    <div>
+    <div className="contenedor">
       <div className="card text-center mb-3">
         <div className="card-body">
           <p className="btn">

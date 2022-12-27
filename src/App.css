@@ -16,6 +16,7 @@ body {
   outline: none;
 } 
 
+/* estilos peliculas */
 
 .container {
   width: 100%;
@@ -25,12 +26,14 @@ body {
 .grid {
   display: grid;
   margin-left: .5px;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(5,15em);
   grid-gap: 0.3em;
   justify-content: center;
+} 
+
+.grid button {
+  width: 100px!important;
 }
-
-
 /* css para comentarios de usuarios */
 
 .bg-light {
