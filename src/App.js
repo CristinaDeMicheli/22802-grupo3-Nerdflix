@@ -1,5 +1,5 @@
 import {Routes, Route} from 'react-router-dom';
-import {Home} from './componentes/Home';
+// import {Home} from './componentes/Home';
 import {Login} from './componentes/Login';
 import { ProtectedRoute } from './componentes/ProtectedRoute';
 import {Registro} from './componentes/Registro';
@@ -15,15 +15,16 @@ function App() {
     <Routes>
     <Route path='/' element={
       <ProtectedRoute>
-    <Home/>
+    <Peliculas/>
     </ProtectedRoute>
     }/> 
     <Route path='/login' element={<Login/>}/> 
     <Route path='/registro' element={<Registro/>}/> 
-    <Route path='/peliculas' element={<Peliculas />}/> 
-    <Route path='/buscar-peliculas' element={<BuscarPelicula />}/> 
-    <Route path='/comentarios' element={<DefaultComponent />}/> 
-    <Route path='/contacto'element={<Contacto />}/>
+    
+    <Route path='/peliculas' element={<ProtectedRoute><Peliculas /></ProtectedRoute>}/> 
+    <Route path='/buscar-peliculas' element={<ProtectedRoute><BuscarPelicula /></ProtectedRoute>}/> 
+    <Route path='/comentarios' element={<ProtectedRoute><DefaultComponent /></ProtectedRoute>}/> 
+    <Route path='/contacto'element={<ProtectedRoute><Contacto /></ProtectedRoute>}/>
       
     </Routes>
     </AuthProvider>

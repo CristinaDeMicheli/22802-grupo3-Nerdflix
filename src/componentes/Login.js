@@ -35,11 +35,11 @@ export function Login() {
          <h1 class="text-start ms-3 mt-3" id="logo">NERDFLIX</h1>
          <form  onSubmit={handleSubmit} class="container text-center  mt-3 mb-5 pt-5 col-5">
         <label htmlFor="email" class="mt-2  text-white text-start">Email</label>
-        <input type="email" name="email" placeholder="example@gmail.com"  onChange={handleChange}/>
+        <input type="email" name="email" placeholder="email@gmail.com"  onChange={handleChange}/>
         <label htmlFor="password" class="mt-2  text-white text-start ">Password</label>
         <input type="password" name="password" placeholder="********" id="password" onChange={handleChange}/>
         <button>Iniciar Sesión</button>
-
+          <p class="mt-2  text-white text-start">Si no se encuantra registrado aún, haga clip en aqui para hacerlo</p> <a class="mt-2  text-red text-start" href="http://localhost:3000/registro">AQUI</a>
         </form>
 
  

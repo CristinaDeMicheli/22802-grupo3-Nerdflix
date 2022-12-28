@@ -1,6 +1,7 @@
 import React from "react";
 import { CommentSection } from "react-comments-section";
 import "react-comments-section/dist/index.css";
+import { Menu } from "../componentes/menu";
 
 const DefaultComponent = () => {
   const data = [
@@ -44,6 +45,8 @@ const DefaultComponent = () => {
     }
   ];
   return (
+    <div>
+    <Menu/>
     <div className="bg-light">
         <CommentSection
           currentUser={{
@@ -59,6 +62,7 @@ const DefaultComponent = () => {
           }}
           commentData={data}
         />
+    </div>
     </div>
   );
 };

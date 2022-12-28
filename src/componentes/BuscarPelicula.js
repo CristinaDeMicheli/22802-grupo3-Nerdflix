@@ -43,6 +43,7 @@ const BuscarPelicula = () => {
           <button className="btn-buscar" type="submit">
             <FaSearch size={20} />
           </button>
+
         </div>
       </form>
       <div className="grid">

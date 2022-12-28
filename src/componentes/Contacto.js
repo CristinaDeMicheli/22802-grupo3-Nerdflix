@@ -1,9 +1,11 @@
 import React from "react";
+import { Menu } from "./menu";
 import "./estilos/estilos-Contacto.css"
 
 function Contacto() {
   return (
     <div>
+    <Menu/>
       <div className="contact_form">
         <div className="formulario">
           <h1>Formulario de contacto</h1>
