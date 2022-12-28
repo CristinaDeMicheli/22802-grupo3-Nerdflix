@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+:root {
+  --white: #FFFFFF;
+  --red: #e50914;
+  --black: #000000;
+  --grey: #323133;
+  --grey-light: #828282;
+  --red-light: #fe4242;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: var(--black)!important;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
+} 
+
+/* estilos peliculas */
+
+.container {
+  width: 100%;
+  margin: 1em auto!important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.grid {
+  display: grid;
+  margin-left: .5px;
+  grid-template-columns: repeat(5,15em);
+  grid-gap: 0.3em;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+} 
+
+.grid button {
+  width: 100px!important;
+}
+/* css para comentarios de usuarios */
+
+.bg-light {
+  color: var(--white);
+  padding: 120px!important;
+  background-color: var(--black)!important;
+  --bs-bg-opacity: 0!important;
 }
 
-.App-link {
-  color: #61dafb;
+.overlay {
+/*  background-color: var(--grey-light); */
+ border-radius: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.userInfo .commentsTwo .fullName {
+  color: var(--red);
 }
+
+.comment-title {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--white)!important;
+}
+
+
+.form .postBtn {
+  border: 2px solid var(--red)!important;
+  background-color: var(--red)!important;
+}
+
+
+
