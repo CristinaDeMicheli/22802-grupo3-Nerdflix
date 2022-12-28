@@ -23,7 +23,7 @@ function App() {
     <Route path='/peliculas' element={<Peliculas />}/> 
     <Route path='/buscar-peliculas' element={<BuscarPelicula />}/> 
     <Route path='/comentarios' element={<DefaultComponent />}/> 
-      <Route path='/contacto'element={<Contacto />}/>
+    <Route path='/contacto'element={<Contacto />}/>
       
     </Routes>
     </AuthProvider>
