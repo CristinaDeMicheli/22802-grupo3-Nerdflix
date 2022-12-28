@@ -1,0 +1,67 @@
+:root {
+    --white: #FFFFFF;
+    --red: #e50914;
+    --black: #000000;
+    --grey: #323133;
+    --grey-light: #828282;
+    --red-light: #fe4242;
+  }
+  
+  body {
+    background-color: var(--black)!important;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    outline: none;
+  } 
+  
+  
+  .container {
+    width: 100%;
+    margin: 1em auto!important;
+  }
+  
+  .grid {
+    display: grid;
+    margin-left: .5px;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 0.3em;
+    justify-content: center;
+  }
+  
+  
+  /* css para comentarios de usuarios */
+  
+  .bg-light {
+    color: var(--white);
+    padding: 120px!important;
+    background-color: var(--black)!important;
+    --bs-bg-opacity: 0!important;
+  }
+  
+  .overlay {
+  /*  background-color: var(--grey-light); */
+   border-radius: 20px;
+  }
+  
+  .userInfo .commentsTwo .fullName {
+    color: var(--red);
+  }
+  
+  .comment-title {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--white)!important;
+  }
+  
+  
+  .form .postBtn {
+    border: 2px solid var(--red)!important;
+    background-color: var(--red)!important;
+  }
+  
+  
+  
+  
