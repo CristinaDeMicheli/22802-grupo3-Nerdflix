@@ -31,33 +31,16 @@ export function Registro() {
     return (
         <div className="container-fluid">
          
-         {error && <p>{error}</p>}
+         {error && <p  class="mt-2  text-white text-start" >{error}</p>}
          <h1 className="text-start ms-3 mt-3" id="logo">NERDFLIX</h1>
-          <form  onSubmit={handleSubmit} className="container text-center  mt-3 mb-5 pt-5 col-5">
-             <div className="col-10  mx-auto">
-             
-          <p id="Iniciasesión" className="mt-2  text-white text-start ">Registrarse</p>
-         
-          <div id="form" className="form-floating mb-3">
-   <input type="email" className="form-control bg-dark text-white-50" id="floatingInput" placeholder="name@example.com" onChange={handleChange}/>
-   <label id="label" className="text-white-50" for="floatingInput">Email o número de teléfono</label>
- </div>
- <div id="form" className="form-floating">
-   <input type="password" className="form-control bg-dark text-white-50" id="floatingPassword" placeholder="Password" onChange={handleChange}/>
-   <label id="label" className="text-white-50" for="floatingPassword">Contraseña</label>
- </div>
-         
-         
-       
-         <div className="d-grid gap-2">
-          <button id="btn" className="btn btn-danger mt-5 mb-3" type="button">Registrarse</button>
-         </div>
-         
-        
-        
-   
-         </div>
-         </form>
+            <form  onSubmit={handleSubmit} class="container text-center  mt-3 mb-5 pt-5 col-5">
+        <label htmlFor="email" class="mt-2  text-white text-start">Email</label>
+        <input type="email" name="email" placeholder="example@gmail.com"  onChange={handleChange}/>
+        <label htmlFor="password" class="mt-2  text-white text-start ">Password</label>
+        <input type="password" name="password" placeholder="********" id="password" onChange={handleChange}/>
+        <button>Registrarse</button>
+
+        </form>
  
  
  
