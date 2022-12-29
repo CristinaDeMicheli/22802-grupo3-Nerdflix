@@ -65,5 +65,17 @@ body {
   background-color: var(--red)!important;
 }
 
+#descargar{
+  width: 6rem !important;
+  font-size: 10px !important;
+  height: 2rem;
+}
+
+#ver{
+  width: 6rem !important;
+  font-size: 10px !important;
+  height: 2rem;
+}
+
 
 

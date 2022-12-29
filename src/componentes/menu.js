@@ -17,22 +17,27 @@ export function Menu(){
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="http://localhost:3000/peliculas">Peliculas</a>
+        <a class="nav-link text-white-50" href="http://localhost:3000/peliculas">Peliculas</a>
       </li>
     </ul>
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="http://localhost:3000/comentarios">Comentarios</a>
+        <a class="nav-link text-white-50" href="http://localhost:3000/AddFavourites">Favouritos</a>
       </li>
     </ul>
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="http://localhost:3000/contacto">Contacto</a>
+        <a class="nav-link text-white-50" href="http://localhost:3000/comentarios">Comentarios</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav mr-auto text-white">
+      <li class="nav-item">
+        <a class="nav-link text-white-50" href="http://localhost:3000/contacto">Contacto</a>
       </li>
     </ul>
    
   </div>
-  <button onClick={handleLogout}>Cerrar sessión</button>
+  <button className="btn btn-danger text-sm btn-sm col-2 me-3" onClick={handleLogout}>Cerrar sessión</button>
 </nav>  
    </div>
 }
