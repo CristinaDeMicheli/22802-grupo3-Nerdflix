@@ -1,0 +1,25 @@
+
+
+.genero {
+    display: grid;
+    background-image: url('/src/img/bac.jpg');
+    padding-top: 100px;
+}
+
+h1{
+    text-align: center;
+}
+
+.tabla {
+    opacity: .7;
+    background-color: var(--black);
+    margin-right: 300px;
+    margin-left: 300px;
+    border: 20px solid var(--black);
+}
+
+a {
+    text-decoration:none!important;
+    color: var(--red);
+}
+
