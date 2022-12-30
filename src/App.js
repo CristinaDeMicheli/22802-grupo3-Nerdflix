@@ -19,24 +19,24 @@ function App() {
   return (
     <AuthProvider>
     <Routes>
-    <Route path='22802-grupo3-Nerdflix/' element={
+    <Route path='/' element={
       <ProtectedRoute>
     <Peliculas/>
     </ProtectedRoute>
     }/> 
-    <Route path='22802-grupo3-Nerdflix/login' element={<Login/>}/> 
-    <Route path='22802-grupo3-Nerdflix/registro' element={<Registro/>}/> 
-    <Route path='22802-grupo3-Nerdflix/centro' element={<Centro/>}/> 
-    <Route path='22802-grupo3-Nerdflix/informacion' element={<Informacion/>}/> 
-    <Route path='22802-grupo3-Nerdflix/cookies' element={<Cookies/>}/> 
-    <Route path='22802-grupo3-Nerdflix/preguntas' element={<Preguntas/>}/> 
+    <Route path='/login' element={<Login/>}/> 
+    <Route path='/registro' element={<Registro/>}/> 
+    <Route path='/centro' element={<Centro/>}/> 
+    <Route path='/informacion' element={<Informacion/>}/> 
+    <Route path='/cookies' element={<Cookies/>}/> 
+    <Route path='/preguntas' element={<Preguntas/>}/> 
     
-    <Route path='22802-grupo3-Nerdflix/peliculas' element={<ProtectedRoute><Peliculas /></ProtectedRoute>}/> 
-    <Route path='22802-grupo3-Nerdflix/buscar-peliculas' element={<ProtectedRoute><BuscarPelicula /></ProtectedRoute>}/> 
-    <Route path='22802-grupo3-Nerdflix/comentarios' element={<ProtectedRoute><DefaultComponent /></ProtectedRoute>}/> 
-    <Route path='22802-grupo3-Nerdflix/contacto'element={<ProtectedRoute><Contacto /></ProtectedRoute>}/>
+    <Route path='/peliculas' element={<ProtectedRoute><Peliculas /></ProtectedRoute>}/> 
+    <Route path='/buscar-peliculas' element={<ProtectedRoute><BuscarPelicula /></ProtectedRoute>}/> 
+    <Route path='/comentarios' element={<ProtectedRoute><DefaultComponent /></ProtectedRoute>}/> 
+    <Route path='/contacto'element={<ProtectedRoute><Contacto /></ProtectedRoute>}/>
     {/* <Route path='/AddFavourites'element={<ProtectedRoute><AddFavourites /></ProtectedRoute>}/> */}
-    <Route path='22802-grupo3-Nerdflix/Generos'element={<ProtectedRoute><Generos /></ProtectedRoute>}/> 
+    <Route path='/Generos'element={<ProtectedRoute><Generos /></ProtectedRoute>}/> 
     </Routes>
     </AuthProvider>
   );
