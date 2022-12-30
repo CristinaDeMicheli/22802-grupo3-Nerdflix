@@ -12,6 +12,8 @@ import Centro from "./componentes/Centro";
 import Cookies from "./componentes/Cookies";
 import Informacion from "./componentes/Informacion";
 import Preguntas from "./componentes/Preguntas";
+import Generos from "./componentes/Generos";
+//import AddFavourites from "./componentes/AddFavourites";
 
 function App() {
   return (
@@ -33,7 +35,8 @@ function App() {
     <Route path='/buscar-peliculas' element={<ProtectedRoute><BuscarPelicula /></ProtectedRoute>}/> 
     <Route path='/comentarios' element={<ProtectedRoute><DefaultComponent /></ProtectedRoute>}/> 
     <Route path='/contacto'element={<ProtectedRoute><Contacto /></ProtectedRoute>}/>
-      
+    {/* <Route path='/AddFavourites'element={<ProtectedRoute><AddFavourites /></ProtectedRoute>}/> */}
+    <Route path='/Generos'element={<ProtectedRoute><Generos /></ProtectedRoute>}/> 
     </Routes>
     </AuthProvider>
   );

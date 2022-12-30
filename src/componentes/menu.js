@@ -1,12 +1,10 @@
 import { useAuth } from "../contexto/authContext";
-import BuscarPelicula from "./BuscarPelicula";
-import { Spinner } from "./Spinner";
 export function Menu() {
   const { user, logout, loading } = useAuth();
   const handleLogout = async () => {
     await logout();
   };
-  if (loading) return <Spinner />;
+  if (loading) return <h1>cargando...</h1>;
   //const {user}=useAuth();
   //console.log(user);
   return (
@@ -44,13 +42,33 @@ export function Menu() {
             <li className="nav-item">
               <a
                 className="nav-link text-white-50"
+                href="http://localhost:3000/AddFavourites"
+              >
+                Favouritos
+              </a>
+            </li>
+          </ul>
+          <ul className="navbar-nav mr-auto">
+            <li className="nav-item">
+              <a
+                className="nav-link text-white-50"
+                href="http://localhost:3000/Generos"
+              >
+                Generos
+              </a>
+            </li>
+          </ul>
+          <ul className="navbar-nav mr-auto">
+            <li className="nav-item">
+              <a
+                className="nav-link text-white-50"
                 href="http://localhost:3000/comentarios"
               >
                 Comentarios
               </a>
             </li>
           </ul>
-          <ul className="navbar-nav mr-auto">
+          <ul className="navbar-nav mr-auto text-white">
             <li className="nav-item">
               <a
                 className="nav-link text-white-50"
@@ -60,11 +78,12 @@ export function Menu() {
               </a>
             </li>
           </ul>
-         
-        
         </div>
-        <button className="btn btn-danger  me-3 mt-3" onClick={handleLogout}>
-          Cerrar sesión
+        <button
+          className="btn btn-danger text-sm btn-sm col-2 me-3"
+          onClick={handleLogout}
+        >
+          Cerrar sessión
         </button>
       </nav>
     </div>
