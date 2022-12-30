@@ -4,6 +4,7 @@ import BuscarPelicula from "./BuscarPelicula";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Spinner } from "./Spinner";
 import { Menu } from "./menu";
+
 /* 
 const API_URL =
   "https://api.themoviedb.org/3/movie/popular?api_key=b99d7773e83eff1759b62bfc0e8a373f&language=es-ES";
@@ -13,6 +14,7 @@ const Peliculas = () => {
   const [peliculas, setPeliculas] = useState([]);
   const [pagina, setPagina] = useState(1);
   const [loading, setLoading] = useState(true);
+  
 
   //el numero de pagina es variable
   useEffect(() => {
@@ -44,17 +46,19 @@ const Peliculas = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  
+
   return (
     <div>
     <Menu/>
     <div className="container">
-      
       <BuscarPelicula/>
-      <Spinner />
+
       <div className="grid">
         {peliculas.map((item, id) => (
           <PeliculaCaja key={id} item={item} />
         ))}
+        <Spinner />
       </div>
     </div>
     </div>
