@@ -10,7 +10,7 @@ export function Menu() {
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-dark">
-        <a className="navbar-brand" href="http://localhost:3000/peliculas">
+        <a className="navbar-brand" href="/peliculas">
           <h1 className="text-start ms-3 mt-3" id="logo">
             NERDFLIX
           </h1>
@@ -32,7 +32,7 @@ export function Menu() {
             <li className="nav-item">
               <a
                 className="nav-link text-white-50"
-                href="http://localhost:3000/peliculas"
+                href="/peliculas"
               >
                 Peliculas
               </a>
@@ -42,7 +42,7 @@ export function Menu() {
             <li className="nav-item">
               <a
                 className="nav-link text-white-50"
-                href="http://localhost:3000/AddFavourites"
+                href="/AddFavourites"
               >
                 Favouritos
               </a>
@@ -52,7 +52,7 @@ export function Menu() {
             <li className="nav-item">
               <a
                 className="nav-link text-white-50"
-                href="http://localhost:3000/Generos"
+                href="/Generos"
               >
                 Generos
               </a>
@@ -62,7 +62,7 @@ export function Menu() {
             <li className="nav-item">
               <a
                 className="nav-link text-white-50"
-                href="http://localhost:3000/comentarios"
+                href="/comentarios"
               >
                 Comentarios
               </a>
@@ -72,7 +72,7 @@ export function Menu() {
             <li className="nav-item">
               <a
                 className="nav-link text-white-50"
-                href="http://localhost:3000/contacto"
+                href="/contacto"
               >
                 Contacto
               </a>
