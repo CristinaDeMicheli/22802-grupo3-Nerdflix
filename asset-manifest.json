@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/22802-grupo3-Nerdflix/static/css/main.35ada031.css",
-    "main.js": "/22802-grupo3-Nerdflix/static/js/main.468644b1.js",
+    "main.js": "/22802-grupo3-Nerdflix/static/js/main.df09dcfd.js",
     "static/js/787.5492fed8.chunk.js": "/22802-grupo3-Nerdflix/static/js/787.5492fed8.chunk.js",
     "static/media/bac.jpg": "/22802-grupo3-Nerdflix/static/media/bac.3c73eff77e3e2b03fb47.jpg",
     "index.html": "/22802-grupo3-Nerdflix/index.html",
     "static/media/svg": "/22802-grupo3-Nerdflix/static/media/2a0bc34f2fdf6d6b.6e0f8a48a90f41998086.svg",
     "main.35ada031.css.map": "/22802-grupo3-Nerdflix/static/css/main.35ada031.css.map",
-    "main.468644b1.js.map": "/22802-grupo3-Nerdflix/static/js/main.468644b1.js.map",
+    "main.df09dcfd.js.map": "/22802-grupo3-Nerdflix/static/js/main.df09dcfd.js.map",
     "787.5492fed8.chunk.js.map": "/22802-grupo3-Nerdflix/static/js/787.5492fed8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.35ada031.css",
-    "static/js/main.468644b1.js"
+    "static/js/main.df09dcfd.js"
   ]
 }
