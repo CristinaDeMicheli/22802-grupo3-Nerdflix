@@ -32,7 +32,7 @@ export function Menu() {
             <li className="nav-item">
               <a
                 className="nav-link text-white-50"
-                href="22802-grupo3-Nerdflix/#/peliculas"
+                href="#/peliculas"
               >
                 Peliculas
               </a>
@@ -42,7 +42,7 @@ export function Menu() {
             <li className="nav-item">
               <a
                 className="nav-link text-white-50"
-                href="22802-grupo3-Nerdflix/#/AddFavourites"
+                href="#/AddFavourites"
               >
                 Favouritos
               </a>
@@ -52,7 +52,7 @@ export function Menu() {
             <li className="nav-item">
               <a
                 className="nav-link text-white-50"
-                href="22802-grupo3-Nerdflix/#/Generos"
+                href="#/Generos"
               >
                 Generos
               </a>
@@ -62,7 +62,7 @@ export function Menu() {
             <li className="nav-item">
               <a
                 className="nav-link text-white-50"
-                href="22802-grupo3-Nerdflix/#/comentarios"
+                href="#/comentarios"
               >
                 Comentarios
               </a>
@@ -72,7 +72,7 @@ export function Menu() {
             <li className="nav-item">
               <a
                 className="nav-link text-white-50"
-                href="22802-grupo3-Nerdflix/#/contacto"
+                href="#/contacto"
               >
                 Contacto
               </a>

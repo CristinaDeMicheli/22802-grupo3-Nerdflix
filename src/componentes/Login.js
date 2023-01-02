@@ -65,7 +65,7 @@ export function Login() {
         </p>{" "}
         <a
         className="mt-2  text-red text-start"
-          href="22802-grupo3-Nerdflix/#/registro"
+          href="#/registro"
         >
           AQUI
         </a>
