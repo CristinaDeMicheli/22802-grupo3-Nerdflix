@@ -133,7 +133,6 @@ export function Login() {
                 </li>
               </ul>
             </div>
-
             <div className="col-3 box">
               <ul className="list-inline quick-links">
                 <li className="mt-4"></li>
