@@ -65,7 +65,7 @@ export function Login() {
         </p>{" "}
         <a
         className="mt-2  text-red text-start"
-          href="http://localhost:3000/registro"
+          href="/registro"
         >
           AQUI
         </a>
@@ -77,7 +77,7 @@ export function Login() {
             <div className="col-12 footer-column">
               <ul className="nav flex-column">
                 <li className="nav-item">
-                  <a className="nav-link mt-4 ms-4" href="http://localhost:3000/preguntas">
+                  <a className="nav-link mt-4 ms-4" href="/preguntas">
                     ¿Preguntas? Llama al 0800 345 6789
                   </a>
                 </li>
@@ -89,12 +89,12 @@ export function Login() {
             <div className="col-3 footer-column">
               <ul className="nav flex-column">
                 <li className="nav-item">
-                  <a className="nav-link mt-4 ms-4" href="http://localhost:3000/preguntas">
+                  <a className="nav-link mt-4 ms-4" href="/preguntas">
                     Preguntas Frecuentes
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link  ms-4" href="http://localhost:3000/cookies">
+                  <a className="nav-link  ms-4" href="/cookies">
                     Preferencias de cookies
                   </a>
                 </li>
@@ -113,12 +113,12 @@ export function Login() {
               <ul className="nav flex-column">
                 <li className="mt-4"></li>
                 <li className="nav-item">
-                  <a className="nav-link  " href="http://localhost:3000/centro">
+                  <a className="nav-link  " href="/centro">
                     Centro de ayuda
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="http://localhost:3000/informacion">
+                  <a className="nav-link" href="/informacion">
                     Información corporativa
                   </a>
                 </li>
@@ -129,7 +129,7 @@ export function Login() {
               <ul className="list-inline quick-links">
                 <li className="mt-4"></li>
                 <li className="list-inline-item mt-2">
-                  <a href="http://localhost:3000/">Término de uso</a>
+                  <a href="/">Término de uso</a>
                 </li>
               </ul>
             </div>
@@ -138,7 +138,7 @@ export function Login() {
               <ul className="list-inline quick-links">
                 <li className="mt-4"></li>
                 <li className="list-inline-item mt-2">
-                  <a href="http://localhost:3000/">Privacidad</a>
+                  <a href="/">Privacidad</a>
                 </li>
               </ul>
             </div>
