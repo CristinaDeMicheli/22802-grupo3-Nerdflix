@@ -1,69 +1,86 @@
 import React, { useState } from "react";
-import VistaPeliculaBuscada from "./VistaPeliculaBuscada";
 import { FaSearch } from "react-icons/fa";
+import PeliculaCaja from "./PeliculaCaja";
+import Swal from "sweetalert2";
 import "./estilos/estilos-BuscarPelicula.css";
-import "../App.css";
 import { Spinner } from "./Spinner";
 
-const API_IMG = "https://image.tmdb.org/t/p/w500/";
 /* const API_SEARCH = "https://api.themoviedb.org/3/search/movie?api_key=b99d7773e83eff1759b62bfc0e8a373f&busqueda"; */
 
 const BuscarPelicula = () => {
-  const [pelis, setPelis] = useState([]);
-  const [busqueda, setBusqueda] = useState("");
+  const [buscar, setBuscar] = useState("");
+  const [pagina, setPagina] = useState(1);
+  const [resultados, setResultados] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
 
-  const buscarPelicula = async (e) => {
+
+  const manejarBusqueda = (e) => {
     e.preventDefault();
-    console.log("Buscando");
-    try {
-      const url = `https://api.themoviedb.org/3/search/movie?api_key=b99d7773e83eff1759b62bfc0e8a373f&query=${busqueda}&language=es-ES`;
-      const res = await fetch(url);
-      const data = await res.json();
-      console.log("consulta", data);
-      setPelis(data.results);
-    } catch (e) {
-      console.log(e);
-    }
+    setLoading(true);
+    setError(null);
+
+    fetch(
+      `https://api.themoviedb.org/3/search/movie?api_key=b99d7773e83eff1759b62bfc0e8a373f&language=en-US&query=${buscar}&page=${pagina}`
+    )
+      .then((res) => {
+        res.json()
+      })
+      .then((data) => {
+        setResultados(data.results);
+        setLoading(false);
+      })
+    
   };
 
-  const cambios = (e) => {
-    setBusqueda(e.target.value);
+
+  const manejarLeerMas = () => {
+    setPagina(pagina + 1);
+    setLoading(true);
+    fetch(
+      `https://api.themoviedb.org/3/search/movie?api_key=b99d7773e83eff1759b62bfc0e8a373f&language=en-US&query=${buscar}&page=${
+        pagina + 1
+      }`
+    )
+      .then((res) => res.json())
+      .then((data) => {
+        setResultados([...resultados, ...data.results]);
+        setLoading(false);
+      });
   };
+
   return (
     <div>
-      <form className="busqueda-contenedor" onSubmit={buscarPelicula}>
+      <form className="busqueda-contenedor" onSubmit={manejarBusqueda}>
         <div className="caja-busqueda">
           <input
-            className="inputBusqueda"
+            className="inputBusqueda  border-0"
             type="text"
             placeholder="buscar peliculas"
-            value={busqueda}
-            onChange={cambios}
+            value={buscar}
+            onChange={(e) => setBuscar(e.target.value)}
           />
           <button className="btn-buscar" type="submit">
             <FaSearch size={20} />
           </button>
-
         </div>
       </form>
+
       <div className="grid">
-        {pelis.length === 0 ? (
-          <p>No se encuentran resultados</p>
-        ) : (
-          pelis.map((peli) => {
-            return (
-              <div key={peli.id}>
-                <Spinner />
-                <VistaPeliculaBuscada
-                  titulo={peli.title}
-                  fl={peli.release_date}
-                  descripcion={peli.overview}
-                  imagen={API_IMG + peli.poster_path}
-                />
-              </div>
-            );
-          })
+        {resultados.map((result) => (
+          <div key={result.id}>
+            <PeliculaCaja item={result} />
+          </div>
+        ))}
+        {resultados.length > 0 && (
+          <button
+            onClick={manejarLeerMas}
+            className="btn btn-danger text-white ms-2"
+          >
+            Ver más
+          </button>
         )}
+        {loading && <Spinner />}
       </div>
     </div>
   );

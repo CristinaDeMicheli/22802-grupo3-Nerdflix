@@ -1,0 +1,41 @@
+.contenedor-genero {
+  margin-left: 12rem;
+  width: 1000px !important;
+  background: var(--black);
+  opacity: 0.8;
+}
+
+.genero {
+  display: grid;
+  background-image: url("/src/img/bac.jpg");
+  padding-top: 100px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.tabla {
+  opacity: 0.7;
+  background-color: var(--black);
+  margin-right: 300px;
+  margin-left: 300px;
+  border: 20px solid var(--black);
+}
+
+a {
+  text-decoration: none !important;
+  color: var(--red);
+}
+
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+  .contenedor-genero {
+    margin-left: 6rem;
+    padding-right: 2rem;
+    width: 800px !important;
+  }
+  .pe-5 {
+    padding-right: 0 !important;
+  }
+}
+

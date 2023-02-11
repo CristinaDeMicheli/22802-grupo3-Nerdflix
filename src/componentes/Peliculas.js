@@ -1,18 +1,15 @@
 import { useState, useEffect } from "react";
 import PeliculaCaja from "./PeliculaCaja";
-import BuscarPelicula from "./BuscarPelicula";
+import "./estilos/estilos-Peliculas.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Spinner } from "./Spinner";
 import { Menu } from "./menu";
-/* 
-const API_URL =
-  "https://api.themoviedb.org/3/movie/popular?api_key=b99d7773e83eff1759b62bfc0e8a373f&language=es-ES";
- */
-const Peliculas = () => {
+
+const Peliculas = (props) => {
   // hooks listado de peliculas y paginas
   const [peliculas, setPeliculas] = useState([]);
   const [pagina, setPagina] = useState(1);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   //el numero de pagina es variable
   useEffect(() => {
@@ -45,18 +42,18 @@ const Peliculas = () => {
   }, []);
 
   return (
-    <div>
-    <Menu/>
-    <div className="container">
-      
-      <BuscarPelicula/>
-      <Spinner />
-      <div className="grid">
-        {peliculas.map((item, id) => (
-          <PeliculaCaja key={id} item={item} />
-        ))}
+    <div >
+      <Menu />
+      <div>
+        <h2 className="text-white ps-5 py-4">Películas populares</h2>
+
+        <div className="grid">
+          {peliculas.map((item, id) => (
+            <PeliculaCaja key={id} item={item} />
+          ))}
+          {loading && <Spinner />}
+        </div>
       </div>
-    </div>
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import DefaultComponent from "./AppComentarios";
+import DefaultComponent from "./AppSistemaComentarios";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const rootElement = document.getElementById("root");

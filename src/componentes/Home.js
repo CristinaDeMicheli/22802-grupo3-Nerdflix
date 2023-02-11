@@ -1,11 +1,14 @@
 import { useAuth } from "../contexto/authContext";
 import { Menu } from "./menu";
+import { Spinner } from "./Spinner";
+
+
 export function Home() {
    const {user, logout, loading} = useAuth()
    const handleLogout = async() =>{
       await logout();
    };
-   if (loading) return <h1>cargando...</h1>
+   if (loading) return <Spinner />
    //const {user}=useAuth();
    //console.log(user);
    return <div>

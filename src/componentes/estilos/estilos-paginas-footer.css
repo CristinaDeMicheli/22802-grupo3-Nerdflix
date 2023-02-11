@@ -1,0 +1,12 @@
+.container-encabezado {
+  padding-top: 1rem;
+  padding-left: 2rem;
+  height: 6rem;
+}
+
+.contenedor-informacion {
+  background: var(--white) !important ;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-bottom: 4rem;
+}

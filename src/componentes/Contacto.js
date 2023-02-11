@@ -9,7 +9,7 @@ function Contacto() {
       <div className="contact_form">
         <div className="formulario">
           <h1>Formulario de contacto</h1>
-          <h3>Escríbenos y en breve mos pondremos en contacto contigo</h3>
+          <h3>Escríbenos y en breve nos pondremos en contacto contigo</h3>
           <form action="" method="post">
             <p>
               <label htmlFor="nombre" className="colocar_nombre">

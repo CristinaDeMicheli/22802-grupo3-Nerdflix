@@ -1,0 +1,50 @@
+#descargar {
+  width: 5.5rem !important;
+  font-size: 10px !important;
+  /*  height: 1.5rem; */
+  height: auto;
+}
+
+#ver {
+  width: 5.5rem !important;
+  font-size: 10px !important;
+  height: auto;
+}
+
+body
+  > div.swal2-container.swal2-center.swal2-backdrop-show
+  > div
+  > div.swal2-actions
+  > button.swal2-confirm.swal2-styled.swal2-default-outline {
+  padding: 0;
+}
+
+body
+  > div.swal2-container.swal2-center.swal2-backdrop-show
+  > div
+  > div.swal2-actions
+  > button.swal2-deny.swal2-styled {
+  padding: 0;
+}
+
+body
+  > div.swal2-container.swal2-center.swal2-backdrop-show
+  > div
+  > div.swal2-actions
+  > button.swal2-confirm.swal2-styled {
+  padding: 0;
+  background-color: var(--red);
+  border: var(--red);
+}
+
+#root
+  > div
+  > div.container
+  > div
+  > div:nth-child(4)
+  > div
+  > div.card-body.corazon
+  > p
+  > svg {
+  padding-left: 6px !important;
+}

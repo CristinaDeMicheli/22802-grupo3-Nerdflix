@@ -1,137 +1,119 @@
-body{
-    height: 100%; 
-    font-family: 'Noto Sans', sans-serif;
-    background-color: var(--red); 
-  }
-  
-  
-  .contact_form{  
-    width: 470px; 
-    height: auto;
-    margin: 80px auto;
-    border-radius: 10px;  
-    padding-top: 30px;
-    padding-bottom: 20px;  
-    background-color: var(--white); 
-    padding-left: 30px; 
-  }
-  
-  
-  input{
-    background-color: var(--white); 
-    width: 408px; 
-    height: 40px; 
-    border-radius: 5px;  
-    border-style: solid; 
-    border-width: 1px; 
-    border-color: var(--grey); 
-    margin-top: 10px;  
-    padding-left: 10px;
-    margin-bottom: 20px; 
-  }
-  
-  
-  textarea{
-    background-color: var(--white); 
-    width: 405px; 
-    height: 150px; 
-    border-radius: 5px;  
-    border-style: solid; 
-    border-width: 1px; 
-    border-color: var(--grey); 
-    margin-top: 10px;  
-    padding-left: 10px;
-    margin-bottom: 20px; 
-    padding-top: 15px; 
-  }
-  
-  
-  label{
-    display: block; 
-    float: center;  
-  }
-  
-  p {
-    margin:0;
-    padding: 0;
-  }
+.contact_form {
+  width: 470px;
+  height: auto;
+  margin: 80px auto;
+  border-radius: 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: var(--white);
+  padding-left: 30px;
+}
 
-  button {
-    height: 45px; 
-    padding-left: 5px;
-    padding-right: 5px;   
-    margin-bottom: 10px; 
-    margin-top: 10px;   
-    text-transform: uppercase;
-    background-color: var(--red); 
-    border-color: var(--red); 
-    border-style: solid; 
-    border-radius: 10px;  
-    width: 420px;   
-    cursor: pointer;
-  }
+input {
+  background-color: var(--white);
+  width: 408px;
+  height: 40px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--grey);
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
 
-  button:active {
-    background-color: var(--grey); 
-    border-color: var(--grey); 
-    color: var(--white);
-  }
-  
-  
-  button p{
-    color: var(--white); 
-  }
-  
-  
-  span{
-    color:var(--grey); 
-  }
-  
-  
-  .aviso {
-    font-size: 13px;  
-    color: var(--black);  
-  }
-  
-  
-  h1{
-    font-size: 37px;  
-    text-align: left; 
-    padding-bottom: 20px; 
-    color:  var(--red-light);
-  }
-  
-  
-  h3{
-    font-size: 16px; 
-    padding-bottom: 30px;
-    color: var(--black);   
-  }
-  
-  
-  p{
-    font-size: 14px; 
-    color: var(--black);  
-  }
-  
-  
-  ::-webkit-input-placeholder {
-   color: var(--grey-light);
-  }
-  
-  
-  ::-webkit-textarea-placeholder {
-   color: var(--grey-light);
-  }
-  
-  
-  .formulario input:focus{
-    outline:0;
-    border: 1px solid #97d848;
-  }
-  
-  
-  .formulario textarea:focus{
-    outline:0;
-    border: 1px solid #97d848;
-  }
+textarea {
+  background-color: var(--white);
+  width: 405px;
+  height: 150px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--grey);
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  padding-top: 15px;
+}
+
+label {
+  display: block;
+  float: center;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  height: 45px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  background-color: var(--red);
+  border-color: var(--red);
+  border-style: solid;
+  border-radius: 10px;
+  width: 420px;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: var(--grey);
+  border-color: var(--grey);
+  color: var(--white);
+}
+
+button p {
+  color: var(--white);
+}
+
+span {
+  color: var(--grey);
+}
+
+.aviso {
+  font-size: 13px;
+  color: var(--black);
+}
+
+h1 {
+  font-size: 37px;
+  text-align: left;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  color: var(--red-light);
+}
+
+h3 {
+  font-size: 16px;
+  padding-bottom: 30px;
+  padding-right: 15px;
+  color: var(--black);
+}
+
+p {
+  font-size: 14px;
+  color: var(--black);
+}
+
+::-webkit-input-placeholder {
+  color: var(--grey-light);
+}
+
+::-webkit-textarea-placeholder {
+  color: var(--grey-light);
+}
+
+.formulario input:focus {
+  outline: 0;
+  border: 1px solid #97d848;
+}
+
+.formulario textarea:focus {
+  outline: 0;
+  border: 1px solid #97d848;
+}

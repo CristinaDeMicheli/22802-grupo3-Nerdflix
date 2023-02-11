@@ -1,0 +1,111 @@
+.contenedor-comentarios {
+  padding-left: 12rem;
+  padding-right: 12rem;
+}
+
+.comentarios {
+  margin-top: 20px;
+  padding: 2rem;
+  opacity: 0.8;
+  border-radius: 10px;
+  background-color: var(--white);
+}
+
+.comentarios-titulo {
+  margin-bottom: 20px;
+  color: var(--grey);
+}
+
+.comentarios-container {
+  margin-top: 40px;
+}
+
+.comentario-form-titulo {
+  font-size: 22px;
+  color: var(--grey-light);
+}
+
+.comentario-form-textarea {
+  width: 100%;
+  height: 80px;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  background-color: var(--black);
+  color: var(--white);
+  border: 1px solid var(--grey);
+}
+
+.comentario-form-button {
+  font-size: 16px;
+  width: 150px;
+  padding: 8px 16px;
+  background: var(--red-light);
+  border-radius: 8px;
+  color: white;
+}
+
+.comentario-form-button:hover:enabled {
+  cursor: pointer;
+  background: rgb(37, 99, 235);
+}
+
+.comentario-form-button:disabled {
+  opacity: 0.7;
+  cursor: default;
+}
+
+.comentario-form-cancel-button {
+  margin-left: 10px;
+}
+
+.comentario {
+  display: flex;
+  margin-bottom: 28px;
+}
+
+.comentario-image-container {
+  margin-right: 12px;
+}
+
+.comentario-image-container img {
+  border-radius: 50px;
+}
+
+.comentario-parte-derecha {
+  width: 100%;
+}
+
+.comentario-contenido {
+  display: flex;
+}
+
+.comentario-autor {
+  margin-right: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--red-light);
+}
+
+.comentario-texto {
+  font-size: 18px;
+}
+
+.comentario-acciones {
+  display: flex;
+  font-size: 12px;
+  color: rgb(51, 51, 51);
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.comentario-accion {
+  margin-right: 8px;
+}
+
+.comentario-accion:hover {
+  text-decoration: underline;
+}
+
+.respuestas {
+  margin-top: 20px;
+}

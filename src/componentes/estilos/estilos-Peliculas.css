@@ -1,0 +1,36 @@
+.icono {
+  width: 22px;
+  filter: brightness(0) saturate(100%) invert(1);
+  height: 22px;
+}
+
+/* estilos peliculas */
+.contenedor {
+  width: 100%;
+}
+
+.grid {
+  display: grid;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+  grid-template-columns: repeat(5, 14em);
+  grid-gap: 0.3em;
+  justify-content: center;
+}
+
+.grid .card {
+  width: auto;
+  height: 500px;
+}
+
+.btn-danger {
+  width: 100px !important;
+}
+
+.contenedor .card-body {
+  padding-bottom: 5px;
+}
+
+.contenedor .card-body img {
+  height: 370px;
+}

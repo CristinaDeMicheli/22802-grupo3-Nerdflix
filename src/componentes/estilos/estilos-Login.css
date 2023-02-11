@@ -1,0 +1,58 @@
+.container {
+  border-radius: 20px;
+  width: 24rem;
+  margin-bottom: 2rem !important;
+  padding: 2rem !important;
+}
+.container-fluid {
+  padding-right: 0;
+}
+.row {
+  margin-right: 0 !important;
+}
+
+.col-6 {
+  width: 28% !important;
+  padding-right: 2rem !important;
+  padding-top: -2rem;
+}
+.visualizar {
+
+  background-color: var(--black);
+  border-top: 8px solid #222;
+  border-bottom: 8px solid #222;
+
+}
+
+.container-fluid .footer {
+  width: 115.5rem !important;
+  border-top: 8px solid #222;
+  border-bottom: 8px solid #222;
+}
+
+.footer .container-fluid .btn-danger {
+  width: 140px;
+  height: 40px;
+  font-size: 12px;
+}
+
+.container-fluid h3 {
+  padding-bottom: 3px;
+  font-size: 30px !important;
+}
+
+.container-fluid .titulo {
+  text-align: center;
+  font-size: 3.5rem;
+  line-height: 1.1;
+  margin-bottom: 0.2rem;
+  padding-top: 4rem !important;
+}
+
+.container-fluid .subtitulo {
+  font-size: 1.125rem;
+}
+
+.container-fluid .footer {
+  background-color: var(--black);
+}
