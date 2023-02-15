@@ -57,7 +57,7 @@ export function Menu() {
       {/* menu */}
       <nav className="navbar navbar-expand-lg navbar-light bg-dark pe-5">
         <div className="container-fluid">
-          <a className="navbar-brand" href="http://localhost:3000/peliculas">
+          <a className="navbar-brand" href="/peliculas">
             <h1 className="text-start ms-3 mt-3" id="logo">
               NERDFLIX
             </h1>
@@ -79,7 +79,7 @@ export function Menu() {
               <li className="nav-item">
                 <a
                   className="nav-link text-white-50"
-                  href="http://localhost:3000/peliculas"
+                  href="/peliculas"
                 >
                   Peliculas
                 </a>
@@ -88,7 +88,7 @@ export function Menu() {
               <li className="nav-item">
                 <a
                   className="nav-link text-white-50"
-                  href="http://localhost:3000/generos"
+                  href="/generos"
                 >
                   Géneros
                 </a>
@@ -97,7 +97,7 @@ export function Menu() {
               <li className="nav-item">
                 <a
                   className="nav-link text-white-50"
-                  href="http://localhost:3000/comentarios"
+                  href="/comentarios"
                 >
                   Comentarios
                 </a>
@@ -106,7 +106,7 @@ export function Menu() {
               <li className="nav-item">
                 <a
                   className="nav-link text-white-50"
-                  href="http://localhost:3000/contacto"
+                  href="/contacto"
                 >
                   Contacto
                 </a>
