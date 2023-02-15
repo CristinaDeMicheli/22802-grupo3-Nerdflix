@@ -70,7 +70,7 @@ export function Login() {
         </p>{" "}
         <a
           className="mt-2  text-red text-start"
-          href="http://localhost:3000/registro"
+          href="/registro"
         >
           AQUI
         </a>
@@ -101,7 +101,7 @@ export function Login() {
                 <li className="nav-item">
                   <a
                     className="nav-link mt-1 ms-3"
-                    href="http://localhost:3000/preguntas"
+                    href="/preguntas"
                   >
                     ¿Preguntas? Llama al 0800 345 6789
                   </a>
@@ -116,7 +116,7 @@ export function Login() {
                 <li className="nav-item">
                   <a
                     className="nav-link  ms-4"
-                    href="http://localhost:3000/preguntas"
+                    href="/preguntas"
                   >
                     Preguntas Frecuentes
                   </a>
@@ -124,7 +124,7 @@ export function Login() {
                 <li className="nav-item">
                   <a
                     className="nav-link  ms-4"
-                    href="http://localhost:3000/cookies"
+                    href="/cookies"
                   >
                     Preferencias de cookies
                   </a>
@@ -134,14 +134,14 @@ export function Login() {
             <div className="col-3  footer-column">
               <ul className="nav flex-column">
                 <li className="nav-item">
-                  <a className="nav-link" href="http://localhost:3000/centro">
+                  <a className="nav-link" href="/centro">
                     Centro de ayuda
                   </a>
                 </li>
                 <li className="nav-item">
                   <a
                     className="nav-link text-info"
-                    href="http://localhost:3000/informacion"
+                    href="/informacion"
                   >
                     Grupo-3 React Js Front End 2022
                   </a>
